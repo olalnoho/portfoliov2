@@ -134,19 +134,17 @@
 }
 
 .introduction__container .card {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 2rem;
   min-width: 45rem;
   min-height: 30rem;
   color: white;
-  background-color: #112a3e;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #061928;
 }
 
 .introduction__container .card__header {
-  background-color: #061928;
   background-color: #112a3e;
   width: 100%;
   display: -webkit-box;
@@ -155,7 +153,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -167,11 +164,12 @@
 }
 
 .introduction__container .card i {
-  margin-right: 1rem;
+  margin-right: 2rem;
   font-size: 4rem;
 }
 
 .introduction__container .card ul {
+  font-size: 1.7rem;
   margin-top: 1rem;
   width: 100%;
   -webkit-box-flex: 1;
@@ -191,7 +189,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  font-size: 1.7rem;
 }
 
 .introduction__container .card ul li {

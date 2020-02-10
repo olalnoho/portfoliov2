@@ -28,13 +28,18 @@
     flex-wrap: wrap;
 
     .card {
+      margin: 2rem;
+      min-width: 45rem;
+      min-height: 30rem;
+      color: white;
+
       align-items: center;
-      &__header{
-        background-color: $dark-bg;
+      background-color: $dark-bg;
+
+      &__header {
         background-color: $btn-primary-hover;
         width: 100%;
         display: flex;
-        align-items: center;
         align-items: center;
         justify-content: center;
         padding: 1.4rem 0;
@@ -42,18 +47,14 @@
           margin: 0;
         }
       }
-      margin: 2rem;
-      min-width: 45rem;
-      min-height: 30rem;
-      color: white;
-      background-color: $btn-primary-hover;
-      background-color: $dark-bg;
+
       i {
-        margin-right: 1rem;
+        margin-right: 2rem;
         font-size: 4rem;
       }
 
       ul {
+        font-size: 1.7rem;
         margin-top: 1rem;
         width: 100%;
         flex: 1;
@@ -62,7 +63,6 @@
         align-items: center;
         flex-direction: column;
         text-align: center;
-        font-size: 1.7rem;
         li {
           margin: 1rem 0;
         }
