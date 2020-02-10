@@ -52,6 +52,10 @@
   display: none;
 }
 
+.active {
+  background-color: crimson !important;
+}
+
 .btn {
   outline: none;
   border: none;
@@ -123,8 +127,8 @@
   right: 0;
   background-color: #fff;
   z-index: 100;
-  -webkit-animation: fade-in 0.4s ease-in forwards;
-          animation: fade-in 0.4s ease-in forwards;
+  -webkit-animation: fade-in 0.2s ease-in forwards;
+          animation: fade-in 0.2s ease-in forwards;
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
 }
@@ -346,8 +350,8 @@
 }
 
 .skills .projects {
-  -ms-grid-columns: (35rem)[auto-fill];
-      grid-template-columns: repeat(auto-fill, 35rem);
+  -ms-grid-columns: (35rem)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 35rem);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

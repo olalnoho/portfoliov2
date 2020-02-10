@@ -55,20 +55,9 @@
   right: 0;
   background-color: #fff;
   z-index: 100;
-  animation: fade-in 0.4s ease-in forwards;
+  animation: fade-in 0.2s ease-in forwards;
   animation-delay: 0.7s;
 }
-
-// .backdrop {
-//   position: fixed;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-//   background-color: rgba(0, 0, 0, 0.9);
-//   z-index: 50;
-//   display: none;
-// }
 
 .backdrop {
   position: fixed;

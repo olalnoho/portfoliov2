@@ -99,7 +99,7 @@
     }
   }
   .projects {
-    grid-template-columns: repeat(auto-fill, 35rem);
+    grid-template-columns: repeat(auto-fit, 35rem);
     justify-content: center;
     gap: 1rem;
   }
