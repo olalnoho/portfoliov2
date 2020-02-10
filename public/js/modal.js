@@ -7,7 +7,7 @@ backdrop.addEventListener('click', function (e) {
    this.classList.toggle('closed')
 })
 
-Array.from(btn).forEach(el => el.addEventListener('click', function (e) {
+Array.from(btn).forEach((el, i) => el.addEventListener('click', function (e) {
    modal.classList.toggle('closed')
    backdrop.classList.toggle('closed')
 }))
