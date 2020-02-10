@@ -23,7 +23,7 @@
     color: white;
     background-color: #223f55;
   }
-  
+
   &:hover {
     transform: translateY(-0.3rem);
   }
@@ -44,4 +44,44 @@
 .button-group {
   display: flex;
   justify-content: space-around;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 100;
+  display: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 50;
+  display: none;
+}
+
+@media only screen and(min-width: 600px) {
+  .modal {
+    top: 10%;
+    bottom: 10%;
+    left: 20%;
+    right: 20%;
+  }
+}
+
+@media only screen and(min-width: 1200px) {
+  .modal {
+    top: 10%;
+    bottom: 10%;
+    left: 20%;
+    right: 20%;
+  }
 }

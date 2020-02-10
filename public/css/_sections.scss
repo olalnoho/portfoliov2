@@ -99,7 +99,7 @@
     }
   }
   .projects {
-    grid-template-columns: repeat(auto-fill, 50rem);
+    grid-template-columns: repeat(auto-fill, 35rem);
     justify-content: center;
     gap: 1rem;
   }
@@ -107,10 +107,10 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    min-height: 50rem;
+    min-height: 35rem;
 
     &__image {
-      min-height: 50rem;
+      min-height: 35rem;
       width: 100%;
       object-fit: cover;
       transition: 0.4s filter;
@@ -133,6 +133,19 @@
       }
     }
 
+    &:nth-child(4) {
+      .project__image {
+        background: url(https://live.staticflickr.com/7613/16305895394_ddcdc8435a_b.jpg) center center no-repeat;
+      }
+    }
+
+    &:nth-child(5) {
+      .project__image {
+        background: url(https://cdn.pixabay.com/photo/2018/05/08/18/25/internet-3383600_960_720.png) center center
+          no-repeat;
+      }
+    }
+
     &__text {
       width: 100%;
       transition: 0.4s all;
@@ -152,6 +165,7 @@
     &__button {
       width: 50%;
       transition: 0.4s all;
+      visibility: hidden;
       position: absolute;
       opacity: 0;
       bottom: 10rem;
@@ -171,6 +185,8 @@
       opacity: 1;
       left: 50%;
       transform: translateX(-50%);
+      pointer-events: unset;
+      visibility: visible;
     }
   }
 }
