@@ -3,10 +3,10 @@ const modal = document.querySelector('.modal')
 const backdrop = document.querySelector('.backdrop')
 
 backdrop.addEventListener('click', function (e) {
-   modal.style.display = 'none'
-   this.style.display = 'none'
+   modal.classList.toggle('closed')
+   this.classList.toggle('closed')
 })
 btn.addEventListener('click', function (e) {
-   modal.style.display = 'block'
-   backdrop.style.display = 'block'
+   modal.classList.toggle('closed')
+   backdrop.classList.toggle('closed')
 })

@@ -48,6 +48,10 @@
   padding-top: 5rem;
 }
 
+.closed {
+  display: none;
+}
+
 .btn {
   outline: none;
   border: none;
@@ -111,6 +115,7 @@
 }
 
 .modal {
+  opacity: 0;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -118,18 +123,70 @@
   right: 0;
   background-color: #fff;
   z-index: 100;
-  display: none;
+  -webkit-animation: fade-in 0.4s ease-in forwards;
+          animation: fade-in 0.4s ease-in forwards;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
 
 .backdrop {
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
   z-index: 50;
-  display: none;
+  -webkit-animation: unfoldIn 0.7s;
+          animation: unfoldIn 0.7s;
+}
+
+@-webkit-keyframes unfoldIn {
+  0% {
+    -webkit-transform: scaleY(0.005) scaleX(0);
+            transform: scaleY(0.005) scaleX(0);
+  }
+  50% {
+    -webkit-transform: scaleY(0.005) scaleX(1);
+            transform: scaleY(0.005) scaleX(1);
+  }
+  100% {
+    -webkit-transform: scaleY(1) scaleX(1);
+            transform: scaleY(1) scaleX(1);
+  }
+}
+
+@keyframes unfoldIn {
+  0% {
+    -webkit-transform: scaleY(0.005) scaleX(0);
+            transform: scaleY(0.005) scaleX(0);
+  }
+  50% {
+    -webkit-transform: scaleY(0.005) scaleX(1);
+            transform: scaleY(0.005) scaleX(1);
+  }
+  100% {
+    -webkit-transform: scaleY(1) scaleX(1);
+            transform: scaleY(1) scaleX(1);
+  }
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media only screen and (min-width: 600px) {
