@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import "./vars";
+@import "./utility";
+@import "./components";
+@import "./sections";
+@import "./typography";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+section {
+  min-height: calc(100vh + 10px);
+  padding: 1rem;
+}
+
+.canvas {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
+ul {
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+}
