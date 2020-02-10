@@ -74,6 +74,40 @@
 .skills {
   background: $dark-bg;
   color: white;
+  h2 {
+    margin-bottom: 10rem;
+  }
+  &__container {
+    .filter-row {
+      margin-bottom: 5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      .filter {
+        transition: 0.3s all;
+        border-radius: 1rem;
+        margin: 1rem;
+        padding: 1rem;
+        width: 20rem;
+        background-color: $btn-primary-hover;
+        font-size: 2rem;
+        cursor: pointer;
+        &:hover {
+          background-color: crimson;
+        }
+      }
+    }
+  }
+  .projects {
+    grid-template-columns: repeat(auto-fill, 50rem);
+    justify-content: center;
+    gap: 1rem;
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+    min-height: 50rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -84,6 +118,15 @@
         min-width: unset;
         width: 100%;
       }
+    }
+  }
+
+  .skills {
+    &__container {
+      width: 100%;
+    }
+    .projects {
+      grid-template-columns: 1fr;
     }
   }
 }
