@@ -258,6 +258,7 @@
 }
 
 .skills .project {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,6 +267,75 @@
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 50rem;
+}
+
+.skills .project__image {
+  min-height: 50rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.4s -webkit-filter;
+  transition: 0.4s -webkit-filter;
+  transition: 0.4s filter;
+  transition: 0.4s filter, 0.4s -webkit-filter;
+}
+
+.skills .project:nth-child(1) .project__image {
+  background: url(https://cdn.pixabay.com/photo/2019/04/20/04/51/social-media-4140959_960_720.jpg) center center;
+}
+
+.skills .project:nth-child(2) .project__image {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/d/db/Commandline_Output_of_LAME_command%2C_on_Mac_OS_X_10.7.2.png) center no-repeat;
+}
+
+.skills .project:nth-child(3) .project__image {
+  background: url(https://cdn.pixabay.com/photo/2018/08/10/11/08/blog-3596548_960_720.png) center center;
+}
+
+.skills .project__text {
+  width: 100%;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.skills .project__text span {
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.skills .project__button {
+  width: 50%;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+  position: absolute;
+  opacity: 0;
+  bottom: 10rem;
+  left: 0;
+}
+
+.skills .project:hover .project__image {
+  -webkit-filter: brightness(20%);
+          filter: brightness(20%);
+}
+
+.skills .project:hover .project__text {
+  opacity: 1;
+  top: 20%;
+}
+
+.skills .project:hover .project__button {
+  opacity: 1;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 @media screen and (max-width: 600px) {
