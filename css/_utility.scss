@@ -1,0 +1,38 @@
+.over {
+  z-index: 1;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.hl {
+  color: crimson;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  max-width: 1200px;
+  width: 80%;
+  margin: auto;
+}
+
+.pt-5 {
+  padding-top: 5rem;
+}
