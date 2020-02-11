@@ -485,7 +485,7 @@
 }
 
 .gallery .project:nth-child(2) .project__image {
-  background: url(../images/commandline.png) center no-repeat;
+  background: url(../images/cmdNote/0.png) center no-repeat;
 }
 
 .gallery .project:nth-child(3) .project__image {
