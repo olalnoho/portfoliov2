@@ -47,11 +47,11 @@
 }
 
 .slide-btn {
-  padding: 1rem;
+  padding: 0.5rem;
   border: none;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.7);
   font-size: 3rem;
-  color: orangered;
+  color: black;
   cursor: pointer;
 }
 
@@ -82,22 +82,22 @@
 
     button {
       position: absolute;
-      transform: translateY(-50%);
+      transform: translateY(50%);
     }
     & #prev {
-      top: 50%;
+      bottom: 50%;
       left: 0;
     }
 
     & #next {
-      top: 50%;
+      bottom: 50%;
       right: 0;
     }
   }
   &__info {
     padding: 2rem;
     color: white;
-    background-color: $dark-bg;
+    background-color: darken($dark-bg, 4%);
     position: relative;
     display: flex;
     flex-direction: column;

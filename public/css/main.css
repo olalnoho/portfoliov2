@@ -119,11 +119,11 @@
 }
 
 .slide-btn {
-  padding: 1rem;
+  padding: 0.5rem;
   border: none;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.7);
   font-size: 3rem;
-  color: orangered;
+  color: black;
   cursor: pointer;
 }
 
@@ -170,24 +170,24 @@
 
 .modal__carousel button {
   position: absolute;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 .modal__carousel #prev {
-  top: 50%;
+  bottom: 50%;
   left: 0;
 }
 
 .modal__carousel #next {
-  top: 50%;
+  bottom: 50%;
   right: 0;
 }
 
 .modal__info {
   padding: 2rem;
   color: white;
-  background-color: #061928;
+  background-color: #030e16;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;

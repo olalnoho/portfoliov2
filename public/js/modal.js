@@ -59,7 +59,7 @@ const modalImage = document.getElementById('modalImage')
 let current;
 let imageNum = 0
 function changeImage(i) {
-   if(!modalData[current].images) {
+   if (!modalData[current].images) {
       return
    }
    modalImage.src = modalData[current].images[i]
@@ -67,12 +67,8 @@ function changeImage(i) {
 
 nextBtn.addEventListener('click', function (e) {
    const project = modalData[current]
-   if (!project.images) {
-      console.log('ran')
-      return
-   }
+   if (!project.images) return
    imageNum++
-   console.log(imageNum)
    if (imageNum > project.images.length - 1) {
       imageNum = 0
    }
