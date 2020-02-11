@@ -8,6 +8,7 @@ const mClose = document.querySelector('.modal__close')
 const toggleModal = e => {
    modal.classList.toggle('closed')
    backdrop.classList.toggle('closed')
+   imageNum = 0
 };
 
 [backdrop, mClose].forEach(el => el.addEventListener('click', function (e) {
@@ -66,8 +67,12 @@ function changeImage(i) {
 
 nextBtn.addEventListener('click', function (e) {
    const project = modalData[current]
-   if (!project.images) return
+   if (!project.images) {
+      console.log('ran')
+      return
+   }
    imageNum++
+   console.log(imageNum)
    if (imageNum > project.images.length - 1) {
       imageNum = 0
    }
