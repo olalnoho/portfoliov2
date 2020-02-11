@@ -58,7 +58,6 @@ let current;
 let imageNum = 0
 function changeImage(i) {
    if(!modalData[current].images) {
-      console.log(modalData[current])
       return
    }
    modalImage.src = `./images/${current}/${i}.png`
