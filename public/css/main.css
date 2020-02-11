@@ -164,8 +164,8 @@
   width: 100%;
   max-width: 700px;
   height: 400px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .modal__carousel button {
