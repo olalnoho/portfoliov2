@@ -23,9 +23,13 @@ filterBtns.forEach((el, i) => {
 })
 
 function filterResults(q) {
-   projects.forEach(el => el.style.display = el.hasAttribute(q) ? 'flex' : 'none')
+   projects.forEach(el =>
+      el.style.display = el.hasAttribute(q) ? 'flex' : 'none'
+   )
 }
 
 function showAll() {
-   projects.forEach(p => p.style.display = 'flex')
+   projects.forEach(el =>
+      el.style.display = 'flex'
+   )
 }

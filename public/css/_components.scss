@@ -46,20 +46,100 @@
   justify-content: space-around;
 }
 
+.slide-btn {
+  padding: 1rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 3rem;
+  color: orangered;
+  cursor: pointer;
+}
+
 .modal {
+  border: 2px solid blanchedalmond;
+  max-width: 700px;
   opacity: 0;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #fff;
   z-index: 100;
   animation: fade-in 0.2s ease-in forwards;
   animation-delay: 0.7s;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  &__carousel {
+    position: relative;
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    background-color: black;
+    img {
+      width: 100%;
+      max-width: 700px;
+      height: 400px;
+      object-fit: contain;
+    }
+
+    button {
+      position: absolute;
+      transform: translateY(-50%);
+    }
+    & #prev {
+      top: 50%;
+      left: 0;
+    }
+
+    & #next {
+      top: 50%;
+      right: 0;
+    }
+  }
+  &__info {
+    padding: 2rem;
+    color: white;
+    background-color: $dark-bg;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+    span {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    .button-group {
+      width: 70%;
+      a {
+        padding: 1rem;
+      }
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__close {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    color: white;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    color: white;
+    background-color: transparent;
+    font-size: 2rem;
+  }
 }
 
 .backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   left: 0;
   top: 0;
@@ -91,20 +171,12 @@
   }
 }
 
-@media only screen and(min-width: 600px) {
+@media only screen and(max-width: 600px) {
   .modal {
-    top: 10%;
-    bottom: 10%;
-    left: 20%;
-    right: 20%;
-  }
-}
-
-@media only screen and(min-width: 1200px) {
-  .modal {
-    top: 10%;
-    bottom: 10%;
-    left: 20%;
-    right: 20%;
+    max-width: unset;
+    width: 100%;
+    img {
+      height: 300px;
+    }
   }
 }
