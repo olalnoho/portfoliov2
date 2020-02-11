@@ -21,12 +21,13 @@ Array.from(btn).forEach((el, i) => el.addEventListener('click', function (e) {
    populateModal(i)
 }))
 
-const makeBtn = (text, href) => {
+const makeBtn = (text, href, cl) => {
    const btn = document.createElement('a')
    btn.classList.add('btn')
-   btn.classList.add('btn--primary')
+   btn.classList.add(cl)
    btn.href = href
    btn.innerText = text
+   btn.target = '_blank'
    return btn
 }
 
@@ -37,9 +38,9 @@ function fillInfo(key, title, detail) {
    title.innerHTML = project.title
    detail.innerHTML = project.detail
    if (project.link) {
-      btnGroup.appendChild(makeBtn('Live Demo', project.link))
+      btnGroup.appendChild(makeBtn('Live Demo', project.link, 'btn--secondary'))
    }
-   btnGroup.appendChild(makeBtn('Source Code', project.source))
+   btnGroup.appendChild(makeBtn('Source Code', project.source, 'btn--primary'))
 }
 
 function populateModal(i) {
@@ -60,7 +61,7 @@ function changeImage(i) {
    if(!modalData[current].images) {
       return
    }
-   modalImage.src = `./images/${current}/${i}.png`
+   modalImage.src = modalData[current].images[i]
 }
 
 nextBtn.addEventListener('click', function (e) {

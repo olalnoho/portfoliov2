@@ -128,8 +128,8 @@
 }
 
 .modal {
-  border: 2px solid blanchedalmond;
   max-width: 700px;
+  width: 700px;
   opacity: 0;
   z-index: 100;
   -webkit-animation: fade-in 0.2s ease-in forwards;
@@ -220,6 +220,7 @@
 }
 
 .modal__info .button-group a {
+  border: 1px solid white;
   padding: 1rem;
 }
 
