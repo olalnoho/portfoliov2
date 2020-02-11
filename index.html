@@ -9,12 +9,29 @@
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
       integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
    <link rel="stylesheet" href="./css/main.css">
+   <!-- <script src="https://unpkg.com/shufflejs@5"></script> -->
 </head>
 
 <body>
-   <div class="modal closed"></div>
-   <div class="backdrop closed"></div>
-   <section class="header">
+   <div class="backdrop closed">
+      <div class="modal closed">
+         <div class="modal__carousel">
+            <img id="modalImage" />
+            <button class="slide-btn" id="next"> &rightarrow; </button>
+            <button class="slide-btn" id="prev"> &leftarrow; </button>
+         </div>
+         <div class="modal__info">
+            <h3 class="modal__info__title heading-3">
+            </h3>
+            <p class="modal__info__detail lead">
+            </p>
+            <div class="button-group">
+            </div>
+            <button class="btn modal__close">X</button>
+         </div>
+      </div>
+   </div>
+   <section class="header flex center">
       <div class="canvas">
          <canvas id="canvas"></canvas>
       </div>
@@ -52,7 +69,7 @@
             <ul>
                <li>NodeJS</li>
                <li>Express</li>
-               <li>REST | GraphQL</li>
+               <li>GraphQL</li>
                <li>Socket.IO</li>
             </ul>
          </div>
@@ -82,11 +99,11 @@
          </div>
       </div>
    </section>
-   <section id="projects" class="skills pt-5">
+   <section id="projects" class="gallery pt-5">
       <h2 class="heading-2 textCenter">
          Some things I've made
       </h2>
-      <div class="skills__container container">
+      <div class="gallery__container container">
          <div class="flex filter-row">
             <div class="filter textCenter active">
                All
@@ -113,7 +130,7 @@
             <div class="project" cmd>
                <div class="project__image"></div>
                <div class="project__text">
-                  <span class="hl">Command line app for keeping track of todos and notes in project</span>
+                  <span class="hl">Command line app for keeping track of todos and notes in a project</span>
                   <p class="lead">Node</span>
                </div>
                <button class="project__button btn btn--secondary">Learn More</button>
@@ -146,6 +163,7 @@
       </div>
    </section>
    <script src="./js/animatedbackground.js"></script>
+   <script src="./js/modalData.js"></script>
    <script src="./js/modal.js"></script>
    <script src="./js/filtering.js"></script>
 </body>

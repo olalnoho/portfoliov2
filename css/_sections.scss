@@ -1,8 +1,8 @@
 .header {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   overflow: hidden;
   background: $dark-bg;
   color: white;
@@ -71,7 +71,7 @@
   }
 }
 
-.skills {
+.gallery {
   background: $dark-bg;
   color: white;
   h2 {
@@ -156,6 +156,7 @@
       opacity: 0;
       transform: translateX(-50%);
       span {
+        font-weight: bold;
         display: block;
         margin-bottom: 2rem;
         font-size: 2rem;
