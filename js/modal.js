@@ -11,7 +11,9 @@ const toggleModal = e => {
 };
 
 [backdrop, mClose].forEach(el => el.addEventListener('click', function (e) {
-   if (e.target == this) toggleModal(e)
+   if (e.target == this) {
+      toggleModal(e)
+   }
 }))
 
 Array.from(btn).forEach((el, i) => el.addEventListener('click', function (e) {
@@ -41,33 +43,43 @@ function fillInfo(key, title, detail) {
 }
 
 function populateModal(i) {
+   modalImage.src = './images/noimage.png'
+   current = Object.keys(modalData)[i]
    const title = document.querySelector('.modal__info__title')
    const detail = document.querySelector('.modal__info__detail')
-   fillInfo(Object.keys(modalData)[i], title, detail)
+   fillInfo(current, title, detail)
    changeImage(0)
 }
 
 const nextBtn = document.getElementById('next');
 const prevBtn = document.getElementById('prev');
 const modalImage = document.getElementById('modalImage')
-
+let current;
 let imageNum = 0
 function changeImage(i) {
-   modalImage.src = `./images/sms/${i}.png`
+   if(!modalData[current].images) {
+      console.log(modalData[current])
+      return
+   }
+   modalImage.src = `./images/${current}/${i}.png`
 }
 
-nextBtn.addEventListener('click', function(e){
+nextBtn.addEventListener('click', function (e) {
+   const project = modalData[current]
+   if (!project.images) return
    imageNum++
-   if(imageNum > 2) {
+   if (imageNum > project.images.length - 1) {
       imageNum = 0
    }
    changeImage(imageNum)
 })
 
-prevBtn.addEventListener('click', function(e){
+prevBtn.addEventListener('click', function (e) {
+   const project = modalData[current]
+   if (!project.images) return
    imageNum--
-   if(imageNum < 0) {
-      imageNum = 2
+   if (imageNum < 0) {
+      imageNum = project.images.length - 1
    }
-   changeImage(imageNum)
+   changeImage(imageNum, current)
 })
