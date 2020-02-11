@@ -118,31 +118,34 @@
 
     &:nth-child(1) {
       .project__image {
-        background: url(../images/socialmedia.webp) center center;
+        background: url(../images/gallery/sm.png);
+        background-size: cover;
       }
     }
     &:nth-child(2) {
       .project__image {
-        background: url(../images/cmdNote/0.png) center no-repeat;
+        background: url(../images/gallery/cmd.png) center no-repeat;
       }
     }
 
     &:nth-child(3) {
       .project__image {
-        background: url(../images/blog.webp) center center;
+        background: url(../images/blog/0.png);
+        background-size: cover;
       }
     }
 
     &:nth-child(4) {
       .project__image {
-        background: url(https://live.staticflickr.com/7613/16305895394_ddcdc8435a_b.jpg) center center no-repeat;
+        background: url(../images/gallery/trello.png) center center no-repeat;
+        background-size: cover;
       }
     }
 
     &:nth-child(5) {
       .project__image {
-        background: url(https://cdn.pixabay.com/photo/2018/05/08/18/25/internet-3383600_960_720.png) center center
-          no-repeat;
+        background: url(../images/gallery/forum.png) center center no-repeat;
+        background-size: cover;
       }
     }
 
