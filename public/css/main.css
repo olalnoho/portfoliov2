@@ -565,7 +565,7 @@
 }
 
 .footer {
-  min-height: 30rem;
+  min-height: 25rem;
   background-color: #061928;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -581,12 +581,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 100000;
+  z-index: 5;
 }
 
 .footer a {
   position: absolute;
-  z-index: 100;
+  z-index: 2;
   padding: 5px;
   background-color: #112a3e;
   border: 2px solid white;
