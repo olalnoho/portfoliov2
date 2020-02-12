@@ -604,7 +604,6 @@ body {
 }
 
 section {
-  min-height: calc(100vh + 5px);
   padding: 1rem;
 }
 
