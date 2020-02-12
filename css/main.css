@@ -510,6 +510,11 @@
 }
 
 .gallery .project:nth-child(5) .project__image {
+  background: url(../images/gram/0.png) center center no-repeat;
+  background-size: cover;
+}
+
+.gallery .project:nth-child(6) .project__image {
   background: url(../images/gallery/trello.png) center center no-repeat;
   background-size: cover;
 }

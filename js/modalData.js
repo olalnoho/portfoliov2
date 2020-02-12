@@ -28,7 +28,14 @@ const modalData = {
       source: 'https://github.com/olalnoho/Forum',
       images: ['./images/forum/0.png', './images/forum/1.png']
    },
-   
+
+   gram: {
+      title: 'Instagram like',
+      detail: 'Upload and comment on images.',
+      source: 'https://github.com/olalnoho/Instagram-Clone',
+      images: ['./images/gram/0.png', './images/gram/1.png', './images/gram/2.png']
+   },
+
    trello: {
       title: 'Trello like',
       detail: 'Create projects, lists and task. With drag and drop support. Basic version of trello.com',
