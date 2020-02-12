@@ -21,7 +21,7 @@ body {
 }
 
 section {
-  // min-height: calc(100vh + 10px);
+  min-height: calc(100vh + 5px);
   padding: 1rem;
 }
 
@@ -42,7 +42,6 @@ a:visited {
   color: inherit;
   text-decoration: none;
 }
-
 
 @media screen and (max-width: 500px) {
   html {
