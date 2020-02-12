@@ -1,8 +1,5 @@
 .header {
   height: 100vh;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   overflow: hidden;
   background: $dark-bg;
   color: white;
@@ -145,6 +142,13 @@
     }
 
     &:nth-child(5) {
+      .project__image {
+        background: url(../images/gram/0.png) center center no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &:nth-child(6) {
       .project__image {
         background: url(../images/gallery/trello.png) center center no-repeat;
         background-size: cover;
