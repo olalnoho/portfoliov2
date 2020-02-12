@@ -97,7 +97,7 @@
   &__info {
     padding: 2rem;
     color: white;
-    background-color: darken($dark-bg, 4%);
+    background-color: $dark-bg;
     position: relative;
     display: flex;
     flex-direction: column;

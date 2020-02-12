@@ -187,7 +187,7 @@
 .modal__info {
   padding: 2rem;
   color: white;
-  background-color: #030e16;
+  background-color: #061928;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -496,12 +496,12 @@
 }
 
 .gallery .project:nth-child(4) .project__image {
-  background: url(../images/gallery/trello.png) center center no-repeat;
+  background: url(../images/gallery/forum.png) center center no-repeat;
   background-size: cover;
 }
 
 .gallery .project:nth-child(5) .project__image {
-  background: url(../images/gallery/forum.png) center center no-repeat;
+  background: url(../images/gallery/trello.png) center center no-repeat;
   background-size: cover;
 }
 
