@@ -18,11 +18,12 @@ html {
 
 body {
   overflow-x: hidden;
+  background-color: $dark-bg;
 }
 
 section {
-  // min-height: calc(100vh + 10px);
-  padding: 1rem;
+  // min-height: calc(100vh + 5px);
+  padding: 5rem;
 }
 
 .canvas {
@@ -42,7 +43,6 @@ a:visited {
   color: inherit;
   text-decoration: none;
 }
-
 
 @media screen and (max-width: 500px) {
   html {
