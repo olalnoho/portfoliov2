@@ -18,11 +18,12 @@ html {
 
 body {
   overflow-x: hidden;
+  background-color: $dark-bg;
 }
 
 section {
   // min-height: calc(100vh + 5px);
-  padding: 1rem;
+  padding: 5rem;
 }
 
 .canvas {
