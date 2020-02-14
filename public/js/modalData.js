@@ -18,7 +18,7 @@ const modalData = {
       detail: 'Standard blog app with tag and search features.',
       link: 'https://alho-blog.herokuapp.com',
       source: 'https://github.com/olalnoho/Blog',
-      images: ['./images/blog/0.png', './images/blog/1.png']
+      images: ['./images/blog/0.png', './images/blog/1.png', './images/blog/2.png']
    },
 
    forum: {
@@ -33,7 +33,7 @@ const modalData = {
       title: 'Instagram like',
       detail: 'Upload and comment on images.',
       source: 'https://github.com/olalnoho/Instagram-Clone',
-      images: ['./images/gram/0.png', './images/gram/1.png', './images/gram/2.png']
+      images: ['./images/gallery/gram.png', './images/gram/1.png', './images/gram/2-small.png']
    },
 
    trello: {
