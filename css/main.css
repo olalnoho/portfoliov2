@@ -500,7 +500,7 @@
 }
 
 .gallery .project:nth-child(3) .project__image {
-  background: url(../images/blog/0.png);
+  background: url(../images/gallery/blog.png);
   background-size: cover;
 }
 
@@ -510,7 +510,7 @@
 }
 
 .gallery .project:nth-child(5) .project__image {
-  background: url(../images/gram/0.png) center center no-repeat;
+  background: url(../images/gallery/gram.png) center center no-repeat;
   background-size: cover;
 }
 
