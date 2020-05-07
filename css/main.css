@@ -712,3 +712,9 @@ a:visited {
     font-size: 50%;
   }
 }
+
+@media screen and (max-width: 400px) {
+  section {
+    padding: 0;
+  }
+}
